@@ -24,10 +24,10 @@ server:
 
 app:
   jwt:
-    secret: 404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970
+    secret: ${JWT_SECRET}
     expirationMs: 86400000
 
 gemini:
   api:
-    key: ${GEMINI_API_KEY:AIzaSyDdrA3GSMCdn60T1Du-VtNQmEIIS2-nRdU}
+    key: ${GEMINI_API_KEY}
     url: https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent
