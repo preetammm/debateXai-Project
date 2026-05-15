@@ -1,0 +1,33 @@
+spring:
+  application:
+    name: debatex-backend
+  datasource:
+    url: jdbc:h2:mem:debatex;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    username: sa
+    password: 
+    driverClassName: org.h2.Driver
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    database-platform: org.hibernate.dialect.H2Dialect
+    properties:
+      hibernate:
+        format_sql: true
+
+server:
+  port: 8080
+
+app:
+  jwt:
+    secret: 404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970
+    expirationMs: 86400000
+
+gemini:
+  api:
+    key: ${GEMINI_API_KEY:AIzaSyDdrA3GSMCdn60T1Du-VtNQmEIIS2-nRdU}
+    url: https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent

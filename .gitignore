@@ -1,0 +1,29 @@
+# Maven distribution (not project code)
+apache-maven-3.9.6/
+maven.zip
+
+# Java / Spring Boot
+backend/target/
+*.class
+*.jar
+*.war
+*.log
+
+# Node / React
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# OS files
+.DS_Store
+Thumbs.db
